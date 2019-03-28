@@ -1,0 +1,19 @@
+{
+  "name": "yts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "movie app.",
+  "scripts": {
+    "start": "lite-server",
+    "deploy" : "gh-pages -d dist"
+  },
+  "author": "Prabin Gurung",
+  "homepage" : "https://Soltee.github.io/vanilla-js-movie-app",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
