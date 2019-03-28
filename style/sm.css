@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px)
+{
+	.moviesDiv{
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+		box-sizing: border-box;
+	}
+	
+	.movie{
+		height: 100%;
+		width: 100%;
+	}
+	.movie-image{
+		width: 90%;
+		height: 90%;
+	}
+
+	.main{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 5px;
+		box-sizing: border-box;
+	}
+	.one{
+		width: 100%;
+	}
+	.two{
+		margin:0;
+	}
+	.similar{
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+		box-sizing: border-box;
+	}
+	.similar-img{
+		margin-bottom: 5px;
+	}
+}
