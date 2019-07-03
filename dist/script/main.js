@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	//Get All
 	let data = query(`list_movies.json?limit=10`).then(res => {
-		
+		console.log(res);
 		let all = res;
 		res.data.movies.forEach((movie) => {
 			let divWrapper = document.createElement('div');
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				
 			}
 
-				fetch(`https://yts.am/api/v2/list_movies.json?limit=${limit}&page=${page--}`)
+				fetch(`https://yts.lt/api/v2/list_movies.json?limit=${limit}&page=${page--}`)
 					.then(res => res.json())
 					.then(resu => {
 						console.log(page);
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				
 			}
 
-				fetch(`https://yts.am/api/v2/list_movies.json?limit=${limit}&page=${page++}`)
+				fetch(`https://yts.lt/api/v2/list_movies.json?limit=${limit}&page=${page++}`)
 					.then(res => res.json())
 					.then(resu => {
 						console.log(page);
