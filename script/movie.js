@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	let data = query(`movie_details.json?movie_id=${param}`).then(res => {
 
-
+		console.log(res);
 		if(res.data.movie)
 		{
 			let main = document.createElement('div');

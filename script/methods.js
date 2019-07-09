@@ -3,7 +3,7 @@ let loader = document.querySelector('.loader');
 let loading = true;
 
 function query(endpoint){
-	let data = fetch(`https://yts.am/api/v2/${endpoint}`)
+	let data = fetch(`https://yts.lt/api/v2/${endpoint}`)
 		.then(res => res.json())
 		.then(resu => {
 			if(loading){
@@ -11,7 +11,8 @@ function query(endpoint){
 				loader.style.display = "block";
 
 				if(resu.status === 'ok'){
-					return resu;				
+					return resu;
+					console.log(resu);				
 				}
 
 			}
