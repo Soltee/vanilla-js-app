@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-	
+
 	let moviesDiv = document.querySelector('.moviesDiv');
 	let paginateDiv = document.querySelector('.paginate');
 
@@ -16,11 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			let img = document.createElement('img');
 			let a  = document.createElement('a');
 			a.className = "movie-anchor";
-			if(window.location.hostname === '127.0.0.1'){
-				a.href = `/movie.html?id=${movie.id}`;
-			} else{
-				a.href = `https://soltee.github.io/vanilla-js-app/movie.html?id=${movie.id}`;
-			}
+			a.href = `${URL}/movie.html?id=${movie.id}`;
+			
 
 			img.className = 'movie-image';	
 			img.alt = "Image For Movie.";
