@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
 						let img = document.createElement('img');
 						let a  = document.createElement('a');
 						a.className = "movie-anchor";
-						a.href = `/movie.html?id=${movie.id}`;
-
+						a.href = `${URL}/movie.html?id=${movie.id}`;
+						
 						img.className = 'movie-image';	
 						img.alt = "Image For Movie.";
 						img.src = movie.large_cover_image;
