@@ -33,7 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
 						let img = document.createElement('img');
 						let a  = document.createElement('a');
 						a.className = "movie-anchor";
-						a.href = `/movie.html?id=${movie.id}`;
+						if(window.location.hostname == "localhost"){
+							a.href = `/movie.html?id=${movie.id}`;
+						} else{
+							a.href = `https://soltee.github.io/vanilla-js-app/movie.html?id=${movie.id}`;
+						}
 
 						img.className = 'movie-image';	
 						img.alt = "Image For Movie.";
