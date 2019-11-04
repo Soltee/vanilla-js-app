@@ -1,6 +1,3 @@
-const URL = (window.location.hostname === '127.0.0.1') ? 'http://localhost:1000' : 'https://dist-miho1mizg.now.sh';	
-// const URL = (window.location.hostname === 'localhost') ? 'http://soltee.github.io.com' : 'https://soltee.github.io/vanilla-js-app';	
-
 //Get All Movies
 let loader = document.querySelector('.loader');
 let loading = true;

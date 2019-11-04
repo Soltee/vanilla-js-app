@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 						let img = document.createElement('img');
 						let a  = document.createElement('a');
 						a.className = "movie-anchor";
-						a.href = `${URL}/movie.html?id=${movie.id}`;
+						a.href = `/movie.html?id=${movie.id}`;
 						
 						img.className = 'movie-image';	
 						img.alt = "Image For Movie.";
